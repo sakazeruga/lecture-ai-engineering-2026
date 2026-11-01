@@ -17,7 +17,7 @@
   - モデル：`gemini-3.5-flash-lite`、`gemini-3.8-flash`
   - 質問：一般的な用語の「LoRAとは何ですか？」と、講座に固有の「AIE2026の講座の宿題にある「3レベル」とは何ですか？」
   - 実行方法：`lectures/01/run_basic.py` で計12回実行し、出力を `lectures/01/results.json` に保存した。無料枠の毎分上限に収まるよう、実行の間隔を `gemini-3.5-flash-lite` は5秒、`gemini-3.8-flash` は15秒空けた
-  - 環境：Codespaces ではなくローカルPC（Windows）で実行した
+  - 環境：12回の実験はローカルPC（Windows）で実行した。そのあと Codespaces でも、`uv run pytest -q` が 11 passed となること、`uv run python -m app.ask "LoRAとは何ですか？"` でトークン数（入力 7 / 出力 535）と回答が表示されることを確認した
   - AIツール：Claude Code を使い、`app/ask.py` の修正、実行スクリプトの作成、回答の比較、この文章の下書きを行った。回答の要約は `results.json` の出力と照らし合わせた
 - 結果：
   12回すべて成功した。429 や 503 は出ず、再試行もなかった。
