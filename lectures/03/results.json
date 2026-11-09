@@ -130,5 +130,131 @@
     "input_tokens": 1139,
     "output_tokens": 203,
     "output": "**LoRA**と**QLoRA**の主な違いは、**ベースモデルの重みをそのまま使うか、量子化してメモリを節約するか**という点にあります。\n\n* **LoRA（Low-Rank Adaptation）**\n  * 事前学習済みの重み行列を固定し、その変化分（差分）を低ランク行列として別途学習するPEFT（Parameter-Efficient Fine-Tuning）の手法です。学習パラメータや保存するファイルサイズを大幅に削減できます。\n* **QLoRA（Quantized LoRA）**\n  * ベースモデルの重みを4ビットなどに量子化（低精度化）してさらにメモリ消費量を削ったうえで、LoRAを適用する手法です。これにより、より巨大なモデルを限られたGPU環境でも学習できるようになります。\n\n関係する回：第2回"
+  },
+  {
+    "model": "gemini-3.5-flash-lite",
+    "variant": "bulk_query",
+    "question": "LoRAとQLoRAの違いは？",
+    "attempts": 3,
+    "tool_calls": [
+      {
+        "tool": "search_glossary",
+        "args": {
+          "query": "LoRA QLoRA"
+        }
+      }
+    ],
+    "requests": 2,
+    "input_tokens": 1139,
+    "output_tokens": 225,
+    "output": "**LoRA**と**QLoRA**の違いは、モデルの重みをどのように扱うか（量子化の有無）にあります。\n\n* **LoRA（Low-Rank Adaptation）**\n  事前学習済みの重みはそのまま（通常は16ビットなどの精度）固定し、その重みの更新分を低ランク行列（小さな行列）で近似して、その部分だけを学習するPEFT（Parameter-Efficient Fine-Tuning）の手法です。学習するパラメータやファイルサイズを大幅に削減できます。\n\n* **QLoRA（Quantized LoRA）**\n  LoRAの仕組みをベースにしつつ、ベースモデルの重みを **4ビットなど極限まで量子化（圧縮）** してメモリ消費量をさらに節約した上でLoRAによる学習を行う手法です。これにより、より大きなモデルを比較的小さなGPUメモリでも効率よく動かせるようになります。\n\n---\n関連する回：第2回"
+  },
+  {
+    "model": "gemini-3.5-flash-lite",
+    "variant": "baseline",
+    "question": "AIE2026の講座の宿題にある「3レベル」とは何ですか？",
+    "attempts": 1,
+    "tool_calls": [
+      {
+        "tool": "search_glossary",
+        "args": {
+          "query": "3レベル"
+        }
+      }
+    ],
+    "requests": 2,
+    "input_tokens": 1031,
+    "output_tokens": 134,
+    "output": "AIE2026の講座における「3レベル」とは、宿題の構成を示す3段階のレベルのことです。\n\n具体的には以下の構成になっています。\n\n1. **基礎**：講義内容の確認\n2. **実装**：自分でコードを書く\n3. **発展**：調査や試行\n\nどれか1つに取り組めばその回の宿題は完了となり、原則として採点は行われません。ご自身のレベルや目的に合わせて、取り組むレベルを選択してくださいね。\n\n関連する回：第1回"
+  },
+  {
+    "model": "gemini-3.5-flash-lite",
+    "variant": "baseline",
+    "question": "AIE2026の講座の宿題にある「3レベル」とは何ですか？",
+    "attempts": 1,
+    "tool_calls": [
+      {
+        "tool": "search_glossary",
+        "args": {
+          "query": "3レベル"
+        }
+      }
+    ],
+    "requests": 2,
+    "input_tokens": 1031,
+    "output_tokens": 132,
+    "output": "「3レベル」とは、AIE2026における宿題の構成のことで、以下の3つの段階に分かれています。\n\n1. **基礎**: 講義内容の確認を行うレベル\n2. **実装**: 自分でコードを実際に書くレベル\n3. **発展**: さらに深い調査や新たな試行を行うレベル\n\n3つのうち**どれか1つ**に取り組めば、その回の宿題は完了となります。なお、原則として採点は行われません。\n\n（関係する回：第1回）"
+  },
+  {
+    "model": "gemini-3.5-flash-lite",
+    "variant": "no_search_rule",
+    "question": "AIE2026の講座の宿題にある「3レベル」とは何ですか？",
+    "attempts": 1,
+    "tool_calls": [
+      {
+        "tool": "search_glossary",
+        "args": {
+          "query": "3レベル"
+        }
+      }
+    ],
+    "requests": 2,
+    "input_tokens": 983,
+    "output_tokens": 164,
+    "output": "AIE2026の講座における「3レベル」とは、宿題の構成を表す3つの難易度・アプローチの段階のことです。\n\n具体的には以下の3つのレベルに分かれており、**どれか1つに取り組めばその回の宿題は完了**となります（原則として採点は行われません）。\n\n1. **基礎**：講義内容の確認をするレベル\n2. **実装**：自分でコードを書くレベル\n3. **発展**：調査や応用的な試行をするレベル\n\nご自身の興味や現在の理解度に合わせて、好きなレベルを1つ選んで取り組んでみてくださいね！\n\n（関連する回：第1回）"
+  },
+  {
+    "model": "gemini-3.5-flash-lite",
+    "variant": "no_search_rule",
+    "question": "AIE2026の講座の宿題にある「3レベル」とは何ですか？",
+    "attempts": 1,
+    "tool_calls": [
+      {
+        "tool": "search_glossary",
+        "args": {
+          "query": "3レベル"
+        }
+      }
+    ],
+    "requests": 2,
+    "input_tokens": 983,
+    "output_tokens": 148,
+    "output": "AIE2026の講座における「3レベル」とは、宿題の構成を表す3つの段階のことです。\n\nこの講座の宿題は以下の3レベルに分かれており、**どれか1つに取り組めばその回の宿題は完了**となります（原則として採点は行われません）。\n\n1. **基礎**：講義内容の確認\n2. **実装**：自分でコードを書く\n3. **発展**：調査や試行\n\nご自身の興味や理解度に合わせて、好きなレベルを選んで取り組んでみてくださいね。\n\n（関連回：第1回）"
+  },
+  {
+    "model": "gemini-3.5-flash-lite",
+    "variant": "bulk_query",
+    "question": "AIE2026の講座の宿題にある「3レベル」とは何ですか？",
+    "attempts": 1,
+    "tool_calls": [
+      {
+        "tool": "search_glossary",
+        "args": {
+          "query": "3レベル"
+        }
+      }
+    ],
+    "requests": 2,
+    "input_tokens": 1033,
+    "output_tokens": 149,
+    "output": "AIE2026の講座における「3レベル」とは、宿題の構成の仕組みのことです。\n\n宿題には以下の3つの段階（レベル）が用意されており、受講者はこの中から自分のペースや目的に合わせてどれか1つを選んで取り組めば、その回の宿題は完了となります。\n\n1. **基礎**：講義内容の確認\n2. **実装**：自分でコードを書く\n3. **発展**：調査や試行\n\nなお、原則として宿題の採点は行われません。\n\n第1回（関係する回：第1回）"
+  },
+  {
+    "model": "gemini-3.5-flash-lite",
+    "variant": "bulk_query",
+    "question": "AIE2026の講座の宿題にある「3レベル」とは何ですか？",
+    "attempts": 1,
+    "tool_calls": [
+      {
+        "tool": "search_glossary",
+        "args": {
+          "query": "3レベル"
+        }
+      }
+    ],
+    "requests": 2,
+    "input_tokens": 1033,
+    "output_tokens": 147,
+    "output": "AIE2026における「3レベル」とは、宿題の構成の仕組みを指します。\n\n宿題には以下の3段階（レベル）が用意されています。\n\n1. **基礎**：講義内容の確認\n2. **実装**：自分でコードを書く\n3. **発展**：調査や試行\n\nこれら3つのうち**どれか1つ**に取り組めば、その回の宿題は完了となります（原則として採点は行われません）。ご自身の興味や理解度に合わせて、挑戦するレベルを選んでみてください。\n\n（関連する回：第1回）"
   }
 ]
